@@ -1,0 +1,13 @@
+{
+  "packageManager": "yarn@3.4.1",
+  "private": true,
+  "workspaces": [
+    "packages/hello-world"
+  ],
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "build": "yarn workspaces foreach -ptv run build"
+  }
+}
